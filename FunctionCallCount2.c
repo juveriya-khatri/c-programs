@@ -9,7 +9,7 @@ void hello_world()
 
 int main()
 {
-    int count=0;
+    int count = 0;
     
     (count++, hello_world());
     (count++, hello_world());
