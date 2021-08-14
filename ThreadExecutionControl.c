@@ -8,9 +8,11 @@ void *fun(void *integer)
 {
     int i;
     
-    i = (int)integer;
+    i = (int *)integer;
     
-    sleep(2);
+    int s = rand() % 5 + 1;
+    
+    sleep(s);
     
     printf("Thread Integer : %d \n", i);
     
