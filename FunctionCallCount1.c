@@ -7,6 +7,7 @@ static int count = 0;
 void hello_world()
 {
     printf("Hello World! \n");
+    
     count++;
 }
 
