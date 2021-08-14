@@ -1,0 +1,25 @@
+/* C Program to Print the Number of Times a Function is Called. */
+
+#include <stdio.h>
+
+int hello_world()
+{
+    static int count = 0;
+    
+    printf("Hello World! \n");
+    
+    count++;
+    
+    return count;
+}
+
+int main()
+{
+    hello_world();
+    hello_world();
+    int i = hello_world();
+    
+    printf("The Function hello_world() was Called %d Times", i);
+
+    return 0;
+}
